@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00bcd4"
+    android:contentInsetStart="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetEnd="0dp"
+    android:contentInsetRight="0dp"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:weightSum="1"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp">
+
+    <ImageView
+        android:id="@+id/ayarmenu"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/setting" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Fırat Gürgür"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/bildirimmenu"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/bildirim" />
+
+</LinearLayout>

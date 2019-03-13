@@ -1,0 +1,22 @@
+{
+    "Tasks": [
+        {
+            "name": "BakırköyCarrefourSA",
+            "start": "2019-03-07",
+            "finish": "2019-04-23",
+            "lastTime": "2019-03-07"
+        },
+        {
+            "name": "İncirli ŞOK",
+            "start": "2019-03-07",
+            "finish": "2019-04-23",
+            "lastTime": "2019-03-07"
+        },
+        {
+            "name": "İncirli BİM",
+            "start": "2019-03-07",
+            "finish": "2019-04-23",
+            "lastTime": "2019-03-07"
+        }
+    ]
+}
