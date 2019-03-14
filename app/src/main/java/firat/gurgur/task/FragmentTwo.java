@@ -1,9 +1,13 @@
 package firat.gurgur.task;
 
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.InsetDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -48,6 +52,17 @@ public class FragmentTwo extends Fragment {
         adapter = new FavsListAdapter(storesListProjo.getDetailList(), getActivity());
         recyclerView.setAdapter(adapter);
 
+        int[] ATTRS = new int[]{android.R.attr.listDivider};
+
+        TypedArray a = getActivity().obtainStyledAttributes(ATTRS);
+        Drawable divider = a.getDrawable(0);
+        int inset = 40;
+        InsetDrawable insetDivider = new InsetDrawable(divider, inset, 5, 0, 5);
+        a.recycle();
+
+        DividerItemDecoration itemDecoration = new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL);
+        itemDecoration.setDrawable(insetDivider);
+        recyclerView.addItemDecoration(itemDecoration);
 
         return view;
     }
