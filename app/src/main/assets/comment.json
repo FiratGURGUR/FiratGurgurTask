@@ -1,27 +1,28 @@
-[
-    {
-        "name": "BakırköyCarrefourSA",
-        "comment": "Kasap reyonu pisti"
-    },
-    {
-        "name": "İncirli ŞOK",
-        "comment": "Kasap reyonu pisti"
-    },
-    {
-        "name": "İncirli BİM",
-        "comment": "Fiyatlar uygun ama ürünler tazeliğini kaybetmiş"
-    },
-    {
-        "name": "Bakırköy Kahvecisi",
-        "comment": "Kahvelerin tadı güzeldi ama fincan boyutu oldukça küçüktü"
-    },
-    {
-        "name": "Motta kahve",
-        "comment": "Kahveler oldukça güzeldi."
-    },
-    {
-        "name": "Başarı Bilgisayar",
-        "comment": "Fiyatlar uygun değil oldukça pahalı satıyor bilgisayar parçalarını"
-    }
-]
-
+{
+    "Comments": [
+        {
+            "name": "BakırköyCarrefourSA",
+            "comment": "Kasap reyonu pisti"
+        },
+        {
+            "name": "İncirli ŞOK",
+            "comment": "Kasap reyonu pisti"
+        },
+        {
+            "name": "İncirli BİM",
+            "comment": "Fiyatlar uygun ama ürünler tazeliğini kaybetmiş"
+        },
+        {
+            "name": "Bakırköy Kahvecisi",
+            "comment": "Kahvelerin tadı güzeldi ama fincan boyutu oldukça küçüktü"
+        },
+        {
+            "name": "Motta kahve",
+            "comment": "Kahveler oldukça güzeldi."
+        },
+        {
+            "name": "Başarı Bilgisayar",
+            "comment": "Fiyatlar uygun değil oldukça pahalı satıyor bilgisayar parçalarını"
+        }
+    ]
+}

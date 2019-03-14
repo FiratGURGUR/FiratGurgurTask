@@ -59,7 +59,7 @@ public class FavsListAdapter extends RecyclerView.Adapter<FavsListAdapter.MyView
         holder.rate.setRating(Float.parseFloat(dataSet.get(listPosition).getRate()));
         holder.lasttime.setText(dataSet.get(listPosition).getLastTime());
 
-        Typeface face=Typeface.createFromAsset(context.getResources().getAssets(),"fonts/EncodeSansSemiCondensed-Bold.ttf");
+        Typeface face=Typeface.createFromAsset(context.getResources().getAssets(),"fonts/EncodeSansSemiCondensed-Medium.ttf");
         holder.name.setTypeface(face);
     }
 
