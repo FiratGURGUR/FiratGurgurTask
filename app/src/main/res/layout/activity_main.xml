@@ -89,6 +89,7 @@
                 app:tabGravity="fill"
                 app:tabIndicatorColor="@android:color/background_light"
                 app:tabMaxWidth="0dp"
+                app:tabIndicatorFullWidth="false"
                 app:tabSelectedTextColor="@android:color/white"
                 app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
                 app:tabTextColor="#e5e5e5" />
