@@ -56,7 +56,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="TextView"
-                    android:textColor="#e5e5e5" />
+                    android:textColor="#e5e5e5"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/favsayiQ"
@@ -65,7 +66,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="TextView"
-                    android:textColor="#e5e5e5" />
+                    android:textColor="#e5e5e5"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/commentsayiQ"
@@ -74,7 +76,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="TextView"
-                    android:textColor="#e5e5e5" />
+                    android:textColor="#e5e5e5"
+                    android:textSize="17sp" />
             </LinearLayout>
 
             <android.support.design.widget.TabLayout

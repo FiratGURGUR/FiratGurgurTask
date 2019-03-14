@@ -66,11 +66,6 @@ public class FragmentTwo extends Fragment {
         itemDecoration.setDrawable(insetDivider);
         recyclerView.addItemDecoration(itemDecoration);
 
-        int f = adapter.getItemCount();
-        Log.i("FavSayi",String.valueOf(f));
-
-        TextView  frt = view.findViewById(R.id.hiddensayi);
-        frt.setText(String.valueOf(f));
 
 
         return view;

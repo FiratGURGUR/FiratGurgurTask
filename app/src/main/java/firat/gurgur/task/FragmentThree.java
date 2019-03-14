@@ -65,13 +65,6 @@ public class FragmentThree extends Fragment {
         recyclerView.addItemDecoration(itemDecoration);
 
 
-        int f = adapter.getItemCount();
-        TextView frt = view.findViewById(R.id.hiddencom);
-        frt.setText(String.valueOf(f));
-
-
-
-
         return view;
     }
     public String parseJSONData() {

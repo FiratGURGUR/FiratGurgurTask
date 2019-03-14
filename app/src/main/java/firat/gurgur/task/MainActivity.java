@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
         txt_title = view.findViewById(R.id.name);
         ist = findViewById(R.id.ist);
         Typeface face=Typeface.createFromAsset(getAssets(),"fonts/EncodeSansSemiCondensed-Regular.ttf");
+        tasksayiQ.setTypeface(face);
+        commentsayiQ.setTypeface(face);
+        favsayiQ.setTypeface(face);
         txt_title.setTypeface(face);
         ist.setTypeface(face);
 
@@ -87,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+        ViewGroup.LayoutParams params = tabLayout.getLayoutParams();
+        //Change the height in 'Pixels'
+        params.height = 90;
+        tabLayout.setLayoutParams(params);
+
 
         setCustomFont();
 
@@ -136,8 +144,8 @@ public class MainActivity extends AppCompatActivity {
         adapter3 = new ComsListAdapter(storesListProjo3.getDetailList(), this);
 
         int GorevSayim =  adapter1.getItemCount();
-        int FavoriSayim =  adapter1.getItemCount();
-        int YorumSayim =  adapter1.getItemCount();
+        int FavoriSayim =  adapter2.getItemCount();
+        int YorumSayim =  adapter3.getItemCount();
 
         tasksayiQ.setText(String.valueOf(GorevSayim));
         favsayiQ.setText(String.valueOf(FavoriSayim));

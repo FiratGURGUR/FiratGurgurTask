@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:gravity="center"
     android:padding="5dp">
 
     <LinearLayout
@@ -29,7 +30,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="12sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,7 +51,7 @@
             android:gravity="center|right"
             android:text="TextView"
             android:textColor="@android:color/background_dark"
-            android:textSize="17sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -69,6 +71,6 @@
             android:gravity="center|right"
             android:text="TextView"
             android:textColor="@android:color/background_dark"
-            android:textSize="17sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 </RelativeLayout>
