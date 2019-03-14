@@ -33,6 +33,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class FragmentOne extends Fragment {
     TaskListPojo storesListProjo;
@@ -78,13 +79,12 @@ public class FragmentOne extends Fragment {
         itemDecoration.setDrawable(insetDivider);
         recyclerView.addItemDecoration(itemDecoration);
 
-
-
-
-
-
         return view;
     }
+
+
+
+
     public String parseJSONData() {
         String JSONString = null;
         JSONObject JSONObject = null;

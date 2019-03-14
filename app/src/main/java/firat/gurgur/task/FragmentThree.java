@@ -10,9 +10,11 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 
@@ -61,6 +63,14 @@ public class FragmentThree extends Fragment {
         DividerItemDecoration itemDecoration = new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL);
         itemDecoration.setDrawable(insetDivider);
         recyclerView.addItemDecoration(itemDecoration);
+
+
+        int f = adapter.getItemCount();
+        TextView frt = view.findViewById(R.id.hiddencom);
+        frt.setText(String.valueOf(f));
+
+
+
 
         return view;
     }

@@ -10,9 +10,12 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -22,7 +25,6 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class FragmentTwo extends Fragment {
-
     FavListPojo storesListProjo;
     private static RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -64,8 +66,22 @@ public class FragmentTwo extends Fragment {
         itemDecoration.setDrawable(insetDivider);
         recyclerView.addItemDecoration(itemDecoration);
 
+        int f = adapter.getItemCount();
+        Log.i("FavSayi",String.valueOf(f));
+
+        TextView  frt = view.findViewById(R.id.hiddensayi);
+        frt.setText(String.valueOf(f));
+
+
         return view;
     }
+
+
+
+
+
+
+
     public String parseJSONData() {
         String JSONString = null;
         JSONObject JSONObject = null;
