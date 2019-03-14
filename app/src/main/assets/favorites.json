@@ -1,0 +1,34 @@
+{
+    "Favs": [
+        {
+            "name": "BakırköyCarrefourSA",
+            "meter": "400 m",
+            "rate": "5",
+            "lastTime": "2019-03-07"
+        },
+        {
+            "name": "İncirli ŞOK",
+            "meter": "400 m",
+            "rate": "2",
+            "lastTime": "2019-03-07"
+        },
+        {
+            "name": "İncirli BİM",
+            "meter": "400 m",
+            "rate": "3",
+            "lastTime": "2019-03-07"
+        },
+        {
+            "name": "Başarı Bilgisayar",
+            "meter": "400 m",
+            "rate": "3",
+            "lastTime": "2019-03-07"
+        },
+        {
+            "name": "Erdi Market",
+            "meter": "100 m",
+            "rate": "5",
+            "lastTime": "2019-04-07"
+        }
+    ]
+}
