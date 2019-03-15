@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 if (tabViewChild instanceof TextView) {
                     //Put your font in assests folder
                     //assign name of the font here (Must be case sensitive)
-                    ((TextView) tabViewChild).setTypeface(Typeface.createFromAsset(getAssets(), "fonts/EncodeSansSemiCondensed-Regular.ttf"));
+                    ((TextView) tabViewChild).setTypeface(Typeface.createFromAsset(getAssets(), "fonts/EncodeSansSemiCondensed-Light.ttf"));
                 }
             }
         }

@@ -9,38 +9,24 @@
     <LinearLayout
         android:id="@+id/ust"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:background="#03cde6"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingLeft="15dp">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                app:srcCompat="@drawable/hasan1" />
-
-            <TextView
-                android:id="@+id/ist"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="İstanbul"
-                android:textColor="@android:color/background_light" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingLeft="15dp"
+            app:srcCompat="@drawable/hasan1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
+            android:gravity="bottom|center"
             android:orientation="vertical">
 
             <LinearLayout
@@ -84,18 +70,30 @@
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
+                android:layout_marginTop="-5dp"
                 app:tabGravity="fill"
                 app:tabIndicatorColor="@android:color/background_light"
-                app:tabMaxWidth="0dp"
                 app:tabIndicatorFullWidth="false"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
                 app:tabSelectedTextColor="@android:color/white"
                 app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
                 app:tabTextColor="#e5e5e5" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/ist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewpager"
+        android:gravity="bottom"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"
+        android:text="Istanbul"
+        android:textColor="@android:color/background_light"
+        android:textSize="13sp" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
