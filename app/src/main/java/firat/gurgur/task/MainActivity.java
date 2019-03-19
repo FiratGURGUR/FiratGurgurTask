@@ -1,6 +1,7 @@
 package firat.gurgur.task;
 
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -74,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
         ayarmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Ayarlar", Toast.LENGTH_SHORT).show();
+                Intent settingsopen = new Intent(MainActivity.this,Settings.class);
+                startActivity(settingsopen);
+
             }
         });
         bildirimmenu.setOnClickListener(new View.OnClickListener() {

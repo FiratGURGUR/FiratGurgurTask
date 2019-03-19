@@ -1,0 +1,39 @@
+{
+    "Destek": [
+        {
+            "name": "Yardım ve Destek"
+        },
+        {
+            "name": "Bize Ulaşın"
+        },{
+            "name": "Denetçi Olun"
+        },{
+            "name": "Deneme 1"
+        },{
+            "name": "Deneme 2"
+        }
+    ],
+    "Hesap": [
+        {
+            "name": "Kullanım Şartları ve Gizlilik"
+        },
+        {
+            "name": "Şifreni Değiştir"
+        },
+        {
+        "name": "Deneme 3"
+        },
+    {
+        "name": "Deneme 4"
+    }
+    ],
+    "Cikis": [
+        {
+            "name": "Uygulamadan Çıkış Yap"
+        },{
+            "name": "Deneme 5"
+        },{
+            "name": "Deneme 6"
+        }
+    ]
+}
