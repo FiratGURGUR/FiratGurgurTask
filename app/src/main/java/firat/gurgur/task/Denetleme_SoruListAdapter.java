@@ -1,6 +1,7 @@
 package firat.gurgur.task;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.xw.repo.BubbleSeekBar;
 
 import java.util.List;
 
@@ -19,18 +22,20 @@ public class Denetleme_SoruListAdapter extends RecyclerView.Adapter<Denetleme_So
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView soru;
-        SeekBar puan;
+        //SeekBar puan;
         Button btn_kapsam_ici,btn_kapsam_disi;
+        BubbleSeekBar seekfromgithub;
 
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
             this.soru = (TextView) itemView.findViewById(R.id.denetleme_soru);
-            this.puan = (SeekBar) itemView.findViewById(R.id.denetleme_seekbar);
-            puan.setPadding(0, 0, 0, 0);
+            //this.puan = (SeekBar) itemView.findViewById(R.id.denetleme_seekbar);
+           // puan.setPadding(0, 0, 0, 0);
             this.btn_kapsam_ici = itemView.findViewById(R.id.btn_kapsam_ici);
             this.btn_kapsam_disi = itemView.findViewById(R.id.btn_kapsam_disi);
+            this.seekfromgithub = itemView.findViewById(R.id.seekfromgithub);
 
 
         }
@@ -59,14 +64,19 @@ public class Denetleme_SoruListAdapter extends RecyclerView.Adapter<Denetleme_So
 
 
         holder.soru.setText(dataSet.get(listPosition).getSoru());
-        holder.puan.setProgress(Integer.parseInt(dataSet.get(listPosition).getPuan()));
+        //holder.puan.setProgress(Integer.parseInt(dataSet.get(listPosition).getPuan()));
 
         holder.btn_kapsam_ici.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 holder.btn_kapsam_ici.setVisibility(View.GONE);
                 holder.btn_kapsam_disi.setVisibility(View.VISIBLE);
-                holder.puan.setEnabled(false);
+               // holder.puan.setEnabled(false);
+                holder.seekfromgithub.setEnabled(false);
+                holder.seekfromgithub.setTrackColor(Color.GRAY);
+                holder.seekfromgithub.setSecondTrackColor(Color.GRAY);
+                holder.seekfromgithub.setThumbColor(Color.GRAY);
+
             }
         });
         holder.btn_kapsam_disi.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +84,11 @@ public class Denetleme_SoruListAdapter extends RecyclerView.Adapter<Denetleme_So
             public void onClick(View view) {
                 holder.btn_kapsam_disi.setVisibility(View.GONE);
                 holder.btn_kapsam_ici.setVisibility(View.VISIBLE);
-                holder.puan.setEnabled(true);
+               // holder.puan.setEnabled(true);
+                holder.seekfromgithub.setEnabled(true);
+                holder.seekfromgithub.setTrackColor(Color.rgb(3,205,230));
+                holder.seekfromgithub.setSecondTrackColor(Color.rgb(3,205,230));
+                holder.seekfromgithub.setThumbColor(Color.rgb(3,205,230));
             }
         });
 
