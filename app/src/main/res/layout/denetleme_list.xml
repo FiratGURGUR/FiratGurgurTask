@@ -104,7 +104,7 @@
             app:bsb_thumb_color="#03cde6"
             app:bsb_thumb_text_color="#03cde6"
             app:bsb_thumb_text_size="18dp"
-            app:bsb_track_color="#03cde6" />
+            app:bsb_track_color="@android:color/darker_gray" />
 
     </LinearLayout>
 </LinearLayout>

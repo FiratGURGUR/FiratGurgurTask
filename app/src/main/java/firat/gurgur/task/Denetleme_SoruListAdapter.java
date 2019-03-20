@@ -65,7 +65,7 @@ public class Denetleme_SoruListAdapter extends RecyclerView.Adapter<Denetleme_So
 
         holder.soru.setText(dataSet.get(listPosition).getSoru());
         //holder.puan.setProgress(Integer.parseInt(dataSet.get(listPosition).getPuan()));
-
+        holder.seekfromgithub.setProgress(Integer.parseInt(dataSet.get(listPosition).getPuan()));
         holder.btn_kapsam_ici.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,7 +73,6 @@ public class Denetleme_SoruListAdapter extends RecyclerView.Adapter<Denetleme_So
                 holder.btn_kapsam_disi.setVisibility(View.VISIBLE);
                // holder.puan.setEnabled(false);
                 holder.seekfromgithub.setEnabled(false);
-                holder.seekfromgithub.setTrackColor(Color.GRAY);
                 holder.seekfromgithub.setSecondTrackColor(Color.GRAY);
                 holder.seekfromgithub.setThumbColor(Color.GRAY);
 
@@ -86,7 +85,6 @@ public class Denetleme_SoruListAdapter extends RecyclerView.Adapter<Denetleme_So
                 holder.btn_kapsam_ici.setVisibility(View.VISIBLE);
                // holder.puan.setEnabled(true);
                 holder.seekfromgithub.setEnabled(true);
-                holder.seekfromgithub.setTrackColor(Color.rgb(3,205,230));
                 holder.seekfromgithub.setSecondTrackColor(Color.rgb(3,205,230));
                 holder.seekfromgithub.setThumbColor(Color.rgb(3,205,230));
             }
