@@ -77,14 +77,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent settingsopen = new Intent(MainActivity.this,Settings.class);
                 startActivity(settingsopen);
-
             }
         });
         bildirimmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Bildirimler", Toast.LENGTH_SHORT).show();
-            }
+                Intent denetlemeopen = new Intent(MainActivity.this,Denetleme.class);
+                startActivity(denetlemeopen);}
         });
 
 

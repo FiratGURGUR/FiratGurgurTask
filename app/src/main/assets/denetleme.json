@@ -1,0 +1,46 @@
+{
+    "Denetleme": [
+        {
+            "soru": "Gıdalarda tağşiş ve taklit olmadığı görüşüne carıldığı",
+            "puan": "6"
+
+        },{
+            "soru": "Bulaşmaya yol açacak çöp ve atık yığınları, su birikintileri, zararlıların yerleşmesine yol açacak ortamlar bulunmadığı",
+            "puan": "2"
+
+        },{
+            "soru": "Tuvaletler gıdaların işlendiği yerlerden ayrı olduğu ve üretim alanına direkt açılmadığı",
+            "puan": "4"
+
+        },{
+            "soru": "İşletmenin giriş kapısı direkt üretim alanına açılmadığı",
+            "puan": "1"
+
+        },{
+            "soru": "Zemin dayanıklı, su geçirmez, yıkanabilir, toksik olmayan ve dezenfeksiyon gerektiğinde kolayca temizlenen malzemeden olması",
+            "puan": "7"
+
+        },{
+            "soru": "Duvarlar uygun yüksekliğe kadar dayanıklı, su geçirme, yıkanabilir, toksik olmayan ve dezenfeksiyon gerektiğinde kolayca temizlenen malzemeden olması",
+            "puan": "3"
+
+        },{
+            "soru": "Tüm üretim alanları; kirli havayı tahliye eden, temiz hava veren özellikte havalandırma tesisatı içermesi",
+            "puan": "8"
+
+        },{
+            "soru": "İşletme, kapasitesine göre uygun soğutma ekipmanı, soğuk ve donmuş muhafaza odalarına sahip olması",
+            "puan": "1"
+
+        },{
+            "soru": "İşletme, hammadde ve ürünlerin gerekli kalite kontrollerinin yapılabileceği ayrı bir laboratuar alanı içermesi",
+            "puan": "9"
+
+        },{
+            "soru": "Tesis girişinde uygun hijyen alanı oluşturulmuş olması",
+            "puan": "5"
+
+        }
+
+    ]
+}
